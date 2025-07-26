@@ -24,14 +24,14 @@ A Django-based web application for managing events, including event listings, re
 ## 🔥 Screenshots
 
 ### 🛠️ Admin Page
-![Admin Page](images/admin_page.png)
+![Admin Page](images/Admin_page.png)
 
 ### 🏠 Home Page
-![Home Page](images/home_page.png)
+![Home Page](images/Home_page.png)
 
 ### 📝 Registration Page
-![Registration Page](images/registration_page.png)
+![Registration Page](images/Registration_page.png)
 
 ### ✅ Successfully Registered Page
-![Success Page](images/success_page.png)
+![Success Page](images/Registred_page.png)
 
