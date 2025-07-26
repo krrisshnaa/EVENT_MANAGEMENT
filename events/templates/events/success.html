@@ -1,0 +1,7 @@
+{% extends "events/base.html" %}
+{% block title %}Success{% endblock %}
+{% block content %}
+<h1>Thank you {{ participant.name }}!</h1>
+<p>You have successfully registered for {{ event.name }}.</p>
+<a href="{% url 'events_list' %}">Back to Events</a>
+{% endblock %}

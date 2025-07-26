@@ -1,0 +1,32 @@
+{% extends 'events/base.html' %}
+
+{% block title %}Event Detail{% endblock %}
+
+{% block content %}
+<div class="row">
+  <div class="col-md-8 offset-md-2">
+    <h2>{{ event.name }}</h2>
+    <p><strong>Date:</strong> {{ event.date }}</p>
+    <p><strong>Location:</strong> {{ event.location }}</p>
+    <p>{{ event.description }}</p>
+
+    <hr>
+
+    <h4>Register for this event</h4>
+    <form method="post">
+      {% csrf_token %}
+      <div class="mb-3">
+        <label for="id_name">Name</label>
+        <input type="text" name="name" id="id_name" class="form-control" required>
+      </div>
+
+      <div class="mb-3">
+        <label for="id_email">Email</label>
+        <input type="email" name="email" id="id_email" class="form-control" required>
+      </div>
+
+      <button type="submit" class="btn btn-success">Register</button>
+    </form>
+  </div>
+</div>
+{% endblock %}
